@@ -309,7 +309,10 @@ def Phrase():
     EnglishSentence =  phraseEnglishVerbClause + phraseEnglishAdj + phraseDecDatEnglish + phraseConEnglishInf + phraseEnglishPrep
     EnglishSentence = EnglishSentence[0].upper() + EnglishSentence[1:-1] + '.'
     return LatinSentence, EnglishSentence
-for i in range(0,10):
+times = int(input('How many times should I give you a sentence? ')
+for i in range(0, times):
     x, y = Phrase()
-    print(x + '\n' + y)
+    print(x)
+    input()
+    print(y)
 
